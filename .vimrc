@@ -42,4 +42,6 @@ au BufNewFile,BufRead *.py
     \ set autoindent
     \ set fileformat=unix
 
+let mapleader = " "
+nnoremap <leader>nt :NERDTree<CR>
 inoremap jj <ESC>
