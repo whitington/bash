@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"Plugin 'bling/vim-airline'
 Plugin 'jnurmine/Zenburn'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nanotech/jellybeans.vim'
@@ -30,6 +31,7 @@ set background=light
 colorscheme lucius
 LuciusLight
 set nu
+set laststatus=2
 
 set encoding=utf-8
 
@@ -45,3 +47,8 @@ au BufNewFile,BufRead *.py
 let mapleader = " "
 nnoremap <leader>nt :NERDTree<CR>
 inoremap jj <ESC>
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
